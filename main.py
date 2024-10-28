@@ -18,7 +18,7 @@ for index, row in df.iterrows():
     pdf.cell(w=0, h=12, txt=row["Topic"], align="L", ln=1)  # Menambahkan sel dengan teks dari kolom "Topic" dan posisi kiri
     pdf.line(10, 21, 200, 21)  # Menggambar garis horizontal di bawah header
 
-    # Mengatur footer
+    # Mengatur foote
     pdf.ln(265)  # Menambahkan jarak vertikal untuk footer
     pdf.set_font(family="Times", style="I", size=8)  # Mengatur font menjadi italic (I) dengan ukuran 8
     pdf.set_text_color(180, 180, 100)  # Mengatur warna teks footer menjadi kuning keabu-abuan
